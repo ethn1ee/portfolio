@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --background: #f6f6f6;
+    --primary: #060606;
+    --secondary: #7a7a7a;
+    --border: #2e2e2e;
+    --highlight: #22222266;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #060606;
+      --primary: #f6f6f6;
+      --secondary: #7a7a7a;
+      --border: #2e2e2e;
+      --highlight: #222222;
+    }
+  }
+
+  html {
+    @apply antialiased bg-background text-primary leading-none font-mono **:border-border;
+    @apply before:fixed before:top-0 before:left-0 before:size-full before:bg-[url(/noise.webp)] before:bg-repeat before:opacity-50 before:-z-50;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border);
+  --color-highlight: var(--highlight);
+
+  --font-sans: var(--font-pp-neue-montreal);
+  --font-mono: var(--font-pp-neue-montreal-mono);
+}
