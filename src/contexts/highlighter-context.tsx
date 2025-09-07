@@ -83,7 +83,7 @@ const HighlighterProvider = ({ children }: HighlighterProviderProps) => {
           duration: 0.1,
           ease: "circOut",
         }}
-        className="fixed bg-highlight -z-10"
+        className="fixed bg-highlight/60 -z-10"
       />
       {children}
     </HighlighterContext.Provider>
