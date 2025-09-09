@@ -14,7 +14,10 @@ const projects: Readonly<Project[]> = [
       "K8s running on a raspberry pi 5.",
       "Managing postgres, redis, prometheus, vault, and a lot more.",
     ],
-    images: ["/projects/kubernetes-homelab/raspberry-pi.png", "/noise.webp"],
+    images: [
+      "/projects/kubernetes-homelab/raspberry-pi.png",
+      "/projects/kubernetes-homelab/argocd.png",
+    ],
     techStack: ["Kubernetes", "Docker", "Helm", "Go", "gRPC"],
     github: "https://github.com/spitikos",
     website: "https://taehoonlee.cloud",
@@ -41,14 +44,20 @@ const projects: Readonly<Project[]> = [
   {
     title: "emorylife.net",
     description: ["Korean community hub at Emory University."],
-    images: [],
+    images: [
+      "/projects/emorylife/homepage.png",
+      "/projects/emorylife/login.png",
+    ],
     techStack: ["Next.js", "TypeScript", "tRPC", "PostgreSQL"],
     github: "https://github.com/ethn1ee/emorylife",
     website: "https://emorylife.net",
   },
   {
     title: "dooleyonline.net",
-    description: ["Overengineered secondhand market at Emory University"],
+    description: [
+      "Overengineered secondhand market at Emory University.",
+      "A dynamic website where students can buy/sell items, ask questions, and find housing.",
+    ],
     images: [],
     techStack: ["Next.js", "Django", "TypeScript", "PostgreSQL"],
     github: "https://github.com/dooleyonline",

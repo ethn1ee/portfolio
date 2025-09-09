@@ -25,7 +25,7 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
             key={i}
             src={img}
             alt={img}
-            className="h-40 w-fit overflow-hidden inline-block mb-2"
+            className="h-50 w-fit object-contain overflow-hidden inline-block mb-2"
           />
         ))}
       </div>
