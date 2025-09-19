@@ -2,6 +2,7 @@ import { Project } from "@/lib/data";
 import { ArrowUpRightIcon } from "lucide-react";
 import Link from "next/link";
 import { Highlighter } from "../highlighter";
+import Image from "next/image";
 
 type ProjectDetailProps = {
   project: Project;
@@ -19,13 +20,15 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
         ))}
       </div>
 
-      <div className="px-4 grow-1 space-x-2">
+      <div className="px-4 grow-1 flex flex-wrap gap-2">
         {project.images.map((img, i) => (
-          <img
+          <Image
             key={i}
             src={img}
             alt={img}
-            className="h-50 w-fit object-contain overflow-hidden inline-block mb-2"
+            width={200}
+            height={200}
+            className="h-50 static w-fit object-contain overflow-hidden inline-block mb-2"
           />
         ))}
       </div>

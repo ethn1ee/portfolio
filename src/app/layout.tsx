@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import { ppNeueMontreal, ppNeueMontrealMono } from "../lib/fonts";
 import "./globals.css";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Taehoon Lee",
@@ -28,7 +29,7 @@ const Layout = ({ children, aside }: LayoutProps) => {
               {children}
               {aside}
             </div>
-            <footer className="h-20 border-t"></footer>
+            <Footer />
           </ProjectContextProvider>
         </HighlighterProvider>
       </body>

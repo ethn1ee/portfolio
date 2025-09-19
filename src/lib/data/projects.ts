@@ -26,9 +26,10 @@ const projects: Readonly<Project[]> = [
     title: "llog",
     description: [
       "A fast, lightweight CLI for journaling directly from your terminal.",
+      "All data is stored locally in a single SQLite file.",
     ],
     images: [
-      "https://github.com/ethn1ee/llog/blob/6375f3dc71e77054de081c2719377e60792248e1/assets/screenshot.png",
+      "https://raw.githubusercontent.com/ethn1ee/llog/refs/heads/main/assets/screenshot.png",
     ],
     techStack: ["Go", "SQLite", "Cobra", "Gorm", "Viper"],
     github: "https://github.com/ethn1ee/llog",

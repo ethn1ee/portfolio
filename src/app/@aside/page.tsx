@@ -12,11 +12,9 @@ const Page = () => {
         <ProjectDetail project={selectedProject} />
       ) : (
         <p className="px-4 font-sans text-secondary text-lg leading-snug">
-          Hey, I’m Taehoon (Ethan).
-          <br />
-          I’m a senior in college studying CS.
-          <br />I spend most of my time playing with kubernetes, making
-          websites, and writing nushell configs.
+          I’m Taehoon (Ethan).
+          <br />I spend most of my time playing with Kubernetes, making CLIs in
+          Go, and writing helix editor configs.
         </p>
       )}
     </aside>
