@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="h-20 border-t">
       <div className="container mx-auto mt-4 font-sans text-secondary flex justify-between">
-        <span>© {year} Ethan Lee</span>
+        <span>© {year} Taehoon Lee</span>
         <div className="*:text-secondary *:hover:text-primary *:transition-all flex gap-4">
           <Link href="https://github.com/ethn1ee" target="_blank">
             <GitHubIcon />
