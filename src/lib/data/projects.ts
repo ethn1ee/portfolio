@@ -23,12 +23,23 @@ const projects: Readonly<Project[]> = [
     website: "https://taehoonlee.cloud",
   },
   {
+    title: "llog",
+    description: [
+      "A fast, lightweight CLI for journaling directly from your terminal.",
+    ],
+    images: [
+      "https://github.com/ethn1ee/llog/blob/6375f3dc71e77054de081c2719377e60792248e1/assets/screenshot.png",
+    ],
+    techStack: ["Go", "SQLite", "Cobra", "Gorm", "Viper"],
+    github: "https://github.com/ethn1ee/llog",
+  },
+  {
     title: "Committer",
     description: [
       "A CLI tool to generate git commit messages with Google Gemini.",
     ],
     images: ["/projects/committer/demo.gif"],
-    techStack: ["Go", "Cobra"],
+    techStack: ["Go", "Cobra", "Viper"],
     github: "https://github.com/ethn1ee/committer",
   },
   {
