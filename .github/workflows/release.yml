@@ -24,4 +24,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ghcr.io/ethn1ee/website:${{ github.sha }}
+          tags: |
+            ghcr.io/ethn1ee/website:${{ github.sha }}
+            ghcr.io/ethn1ee/website:latest
