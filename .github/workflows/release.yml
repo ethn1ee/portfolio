@@ -2,14 +2,20 @@ name: Release
 
 on:
   push:
-    branches: [ "v2" ]
+    branches: ["v2"]
   pull_request:
-    branches: [ "v2" ]
+    branches: ["v2"]
+
+permissions:
+  packages: write
+  contents: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag website:$(date +%s)
+      - name: Build and Push
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: ethn1ee/website:${{ github.sha }}
