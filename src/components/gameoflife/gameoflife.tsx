@@ -1,6 +1,7 @@
 "use client";
 
 import { memo, useEffect, useRef, useState } from "react";
+import { motion } from "motion/react";
 
 const FPS = 8;
 const INITIAL_LIFE_CHANCE = 0.15;
@@ -120,9 +121,15 @@ const GameOfLife = memo(() => {
   }, [matrix]);
 
   return (
-    <div ref={containerRef} className="size-full">
+    <motion.div
+      ref={containerRef}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.3, ease: "easeOut" }}
+      className="size-full"
+    >
       <canvas ref={canvasRef} />
-    </div>
+    </motion.div>
   );
 });
 GameOfLife.displayName = "GameOfLife";

@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 import { ppNeueMontreal, ppNeueMontrealMono } from "../lib/fonts";
 import "./globals.css";
 import { Footer } from "@/components/footer";
+import Drawer from "@/components/drawer/drawer";
 
 export const metadata: Metadata = {
   title: "Taehoon Lee",
@@ -25,10 +26,11 @@ const Layout = ({ children, aside }: LayoutProps) => {
       <body>
         <HighlighterProvider>
           <ProjectContextProvider>
-            <div className="container @container min-h-svh mx-auto flex border-x">
+            <div className="container @container min-h-svh mx-auto flex border-x overflow-x-hidden">
               {children}
               {aside}
             </div>
+            <Drawer />
             <Footer />
           </ProjectContextProvider>
         </HighlighterProvider>

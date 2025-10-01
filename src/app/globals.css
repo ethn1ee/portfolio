@@ -22,9 +22,8 @@
     }
   }
 
-  html {
-    @apply antialiased bg-background text-primary leading-none font-mono **:border-border;
-    @apply before:fixed before:top-0 before:left-0 before:size-full before:bg-[url(/noise.webp)] before:bg-repeat before:opacity-40 before:-z-50;
+  body {
+    @apply antialiased bg-background text-primary leading-none font-mono **:border-border bg-noise;
   }
 }
 
@@ -37,4 +36,8 @@
 
   --font-sans: var(--font-pp-neue-montreal);
   --font-mono: var(--font-pp-neue-montreal-mono);
+}
+
+@utility bg-noise {
+  @apply before:fixed before:top-0 before:left-0 before:size-full before:bg-[url(/noise.webp)] before:bg-repeat before:opacity-40 before:-z-50;
 }

@@ -10,7 +10,7 @@ type ProjectDetailProps = {
 
 const ProjectDetail = ({ project }: ProjectDetailProps) => {
   return (
-    <div className="flex flex-col h-full justify-between gap-10 py-40">
+    <div className="flex flex-col size-full justify-between gap-10 py-20 lg:py-40">
       <div className="px-4">
         <h2 className="text-xl font-sans mb-1 uppercase">{project.title}</h2>
         {project.description.map((d, i) => (

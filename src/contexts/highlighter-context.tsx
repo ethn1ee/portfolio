@@ -16,11 +16,7 @@ type Element = RefObject<HTMLElement | null>;
 type Padding = { x: number; y: number };
 
 type HighlighterContextType = {
-  // show: boolean;
-  // setShow: Dispatch<SetStateAction<boolean>>;
-  // element: Element | null;
   setElement: Dispatch<SetStateAction<Element | null>>;
-  // padding: Padding;
   setPadding: Dispatch<SetStateAction<Padding>>;
 };
 
@@ -83,7 +79,7 @@ const HighlighterProvider = ({ children }: HighlighterProviderProps) => {
           duration: 0.1,
           ease: "circOut",
         }}
-        className="fixed bg-highlight/60 -z-10"
+        className="hidden lg:block fixed bg-highlight/60 -z-10"
       />
       {children}
     </HighlighterContext.Provider>

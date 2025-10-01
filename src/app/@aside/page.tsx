@@ -4,11 +4,11 @@ import { GameOfLife } from "@/components/gameoflife";
 import { ProjectDetail } from "@/components/project";
 import useProject from "@/hooks/use-project";
 
-const Page = () => {
+const Aside = () => {
   const { selectedProject } = useProject();
 
   return (
-    <aside className="@lg:w-1/3 h-svh sticky top-0">
+    <aside className="hidden lg:block w-1/3 h-svh sticky top-0">
       {selectedProject ? (
         <ProjectDetail project={selectedProject} />
       ) : (
@@ -18,4 +18,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Aside;

@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="h-20 border-t">
+    <footer className="h-20 px-4 border-t">
       <div className="container mx-auto mt-4 font-sans text-secondary flex justify-between">
         <span>© {year} Taehoon Lee</span>
         <div className="*:text-secondary *:hover:text-primary *:transition-all flex gap-4">
