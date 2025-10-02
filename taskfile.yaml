@@ -1,0 +1,9 @@
+version: 3
+
+tasks:
+  deploy:
+    cmds:
+      - gcloud run deploy website
+        --image=us-east4-docker.pkg.dev/personal-473819/ghcr/ethn1ee/website:latest
+        --region=us-east4
+    silent: true
