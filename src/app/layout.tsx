@@ -10,6 +10,20 @@ import Drawer from "@/components/drawer/drawer";
 export const metadata: Metadata = {
   title: "Taehoon Lee",
   description: "Caught in the web",
+  keywords: [
+    "taehoon",
+    "ethan",
+    "lee",
+    "developer",
+    "computer science",
+    "software",
+    "emory",
+    "portfolio",
+    "kubernetes",
+    "go",
+    "programming",
+    "cloud",
+  ],
 };
 
 type LayoutProps = {
@@ -26,7 +40,7 @@ const Layout = ({ children, aside }: LayoutProps) => {
       <body>
         <HighlighterProvider>
           <ProjectContextProvider>
-            <div className="container @container min-h-svh mx-auto flex border-x overflow-x-hidden">
+            <div className="container min-h-svh mx-auto flex border-x overflow-x-hidden">
               {children}
               {aside}
             </div>

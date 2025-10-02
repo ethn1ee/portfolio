@@ -3,9 +3,9 @@
 import { memo, useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 
-const FPS = 8;
-const INITIAL_LIFE_CHANCE = 0.15;
-const RANDOM_REVIVAL_CHANCE = 0.01;
+const FPS = 6;
+const INITIAL_LIFE_CHANCE = 0.12;
+const RANDOM_REVIVAL_CHANCE = 0.001;
 const CELL_SIZE = 20;
 const FONT_SIZE = 16;
 const ASCII = " ·+@";
@@ -125,7 +125,7 @@ const GameOfLife = memo(() => {
       ref={containerRef}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.3, ease: "easeOut" }}
+      transition={{ delay: 0.1, duration: 0.5, ease: "easeOut" }}
       className="size-full"
     >
       <canvas ref={canvasRef} />

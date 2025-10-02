@@ -35,6 +35,17 @@ const projects: Readonly<Project[]> = [
     github: "https://github.com/ethn1ee/llog",
   },
   {
+    title: "Curaitor",
+    description: [
+      "AI-powered coursework management tool built for HackGT 12.",
+      "Automatic file organization, study guide & quiz generation, and interactive file map.",
+      "Implemented the actor model to run multiple Gemini clients concurrently.",
+    ],
+    images: ["/projects/curaitor/dashboard.png", "/projects/curaitor/study-guide.png", "/projects/curaitor/quiz.png"],
+    techStack: ["Go", "Next.js", "TypeScript"],
+    github: "https://github.com/esunn0412/curaitor",
+  },
+  {
     title: "Committer",
     description: [
       "A CLI tool to generate git commit messages with Google Gemini.",

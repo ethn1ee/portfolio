@@ -39,5 +39,5 @@
 }
 
 @utility bg-noise {
-  @apply before:fixed before:top-0 before:left-0 before:size-full before:bg-[url(/noise.webp)] before:bg-repeat before:opacity-40 before:-z-50;
+  @apply before:fixed before:top-0 before:left-0 before:size-full before:bg-[url(/noise.webp)] before:bg-repeat before:opacity-30 before:-z-50;
 }
