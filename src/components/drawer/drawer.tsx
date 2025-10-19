@@ -2,7 +2,7 @@
 
 import useProject from "@/hooks/use-project";
 import { ProjectDetail } from "../project";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { motion } from "motion/react";
 
 const Drawer = () => {
