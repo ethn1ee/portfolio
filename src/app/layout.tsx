@@ -6,6 +6,7 @@ import { ppNeueMontreal, ppNeueMontrealMono } from "../lib/fonts";
 import "./globals.css";
 import { Footer } from "@/components/footer";
 import Drawer from "@/components/drawer/drawer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Taehoon Lee",
@@ -37,6 +38,7 @@ const Layout = ({ children, aside }: LayoutProps) => {
       lang="en"
       className={`${ppNeueMontreal.variable} ${ppNeueMontrealMono.variable}`}
     >
+      <Analytics />
       <body>
         <HighlighterProvider>
           <ProjectContextProvider>
