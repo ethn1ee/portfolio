@@ -3,7 +3,7 @@ import DitherShader from "@/components/ui/dither-shader";
 
 const Page = () => {
   return (
-    <main className="w-svw h-svh px-4 py-10 flex flex-col gap-10 justify-center">
+    <main className="h-svh px-4 py-10 flex flex-col gap-10 justify-center">
       <DitherShader
         src="/photo.jpg"
         gridSize={2}
