@@ -22,7 +22,7 @@ export const LinkButton = (props: LinkButtonProps) => {
   }, [isCopied]);
 
   return props.type === "link" ? (
-    <Link href={props.href} target="_blank" className="hover:opacity-80">
+    <Link href={props.href} target="_blank">
       &gt; {props.name}
     </Link>
   ) : (
@@ -31,7 +31,6 @@ export const LinkButton = (props: LinkButtonProps) => {
         navigator.clipboard.writeText(props.name);
         setIsCopied(true);
       }}
-      className="hover:opacity-80"
     >
       &gt; {props.name}
       {isCopied && (

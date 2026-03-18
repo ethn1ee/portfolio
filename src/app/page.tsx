@@ -1,41 +1,34 @@
-import { Experience, ExperienceProps } from "@/components/experience";
-import { Globe } from "@/components/globe";
 import { LinkButton, LinkButtonProps } from "@/components/link-button";
+import DitherShader from "@/components/ui/dither-shader";
 
 const Page = () => {
   return (
-    <main className="w-svw h-svh p-10 flex flex-col justify-between">
-      <div>
-        <h1 className="text-6xl font-bold flex justify-between mb-10">
-          taehoon lee
-        </h1>
+    <main className="w-svw h-svh px-4 py-10 flex flex-col gap-10 justify-center">
+      <DitherShader
+        src="/photo.jpg"
+        gridSize={2}
+        ditherMode="bayer"
+        colorMode="duotone"
+        primaryColor="#001813"
+        secondaryColor="#E6F7F3"
+        threshold={0.5}
+        objectFit="contain"
+        className="h-80 w-60"
+      />
 
-        <div className="flex justify-between">
-          <div className="space-y-10">
-            <p className="text-sm text-muted-foreground">
-              by day, i study distributed systems as a master’s student at
-              carnegie mellon university.
-              <br />
-              by night, i contribute to open source or play with my kubernetes
-              homelab.
-            </p>
+      <h1 className="text-6xl font-bold flex justify-between">taehoon lee</h1>
 
-            <div className="flex flex-col gap-4 w-fit">
-              {links.map((l, i) => (
-                <LinkButton key={i} {...l} />
-              ))}
-            </div>
-          </div>
+      <p className="text-sm text-muted-foreground">
+        kubernetes, next.js contributor
+        <br />
+        master of software engineering @ carnegie mellon
+        <br />
+        building things in web and cloud
+      </p>
 
-          <div className="w-100">
-            <Globe />
-          </div>
-        </div>
-      </div>
-
-      <div className="mask-b-from-0% flex flex-col pb-4">
-        {experiences.map((e, i) => (
-          <Experience key={i} {...e} />
+      <div className="flex flex-col gap-4 w-fit">
+        {links.map((l, i) => (
+          <LinkButton key={i} {...l} />
         ))}
       </div>
     </main>
@@ -50,23 +43,35 @@ const links: LinkButtonProps[] = [
   { type: "copy", name: "ethantlee21@gmail.com" },
 ];
 
-const experiences: ExperienceProps[] = [
-  {
-    company: "ukg",
-    position: "software engineering intern",
-    start: new Date("2025-05-01"),
-    end: new Date("2025-08-01"),
-  },
-  {
-    company: "estreamly",
-    position: "software engineering intern",
-    start: new Date("2024-05-01"),
-    end: new Date("2024-08-01"),
-  },
-  {
-    company: "emory university cav lab",
-    position: "hci research assistant",
-    start: new Date("2023-11-01"),
-    end: new Date("2025-09-01"),
-  },
-];
+// const experiences: ExperienceProps[] = [
+//   {
+//     company: "huddle",
+//     position: "founding software engineer",
+//     start: new Date("2025-08"),
+//     end: new Date(),
+//   },
+//   {
+//     company: "ukg",
+//     position: "software engineering intern",
+//     start: new Date("2025-05"),
+//     end: new Date("2025-08"),
+//   },
+//   {
+//     company: "estreamly",
+//     position: "software engineering intern",
+//     start: new Date("2024-05"),
+//     end: new Date("2024-08"),
+//   },
+//   {
+//     company: "ursatech",
+//     position: "software engineering intern",
+//     start: new Date("2024-01"),
+//     end: new Date("2024-04"),
+//   },
+//   {
+//     company: "emory university cav lab",
+//     position: "research assistant",
+//     start: new Date("2023-11"),
+//     end: new Date("2025-09"),
+//   },
+// ];
