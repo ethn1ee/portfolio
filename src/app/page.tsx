@@ -46,7 +46,7 @@ const Page = () => {
       <p className="text-sm text-muted-foreground">
         kubernetes, next.js contributor
         <br />
-        master of software engineering @ carnegie mellon
+        studying distributed system @ carnegie mellon
         <br />
         building things in web and cloud
       </p>
