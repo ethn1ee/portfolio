@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export type LinkButtonProps =
-  | { type: "link"; href: string; name: string }
+  | { type: "link"; href: string; name: string; internal?: boolean }
   | { type: "copy"; name: string };
 
 export const LinkButton = (props: LinkButtonProps) => {
@@ -22,7 +22,7 @@ export const LinkButton = (props: LinkButtonProps) => {
   }, [isCopied]);
 
   return props.type === "link" ? (
-    <Link href={props.href} target="_blank">
+    <Link href={props.href} target={props.internal ? undefined : "_blank"}>
       &gt; {props.name}
     </Link>
   ) : (

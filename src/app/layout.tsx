@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { type Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 
 import { cn } from "@/lib/utils";
@@ -13,17 +13,28 @@ const mono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Taehoon Lee",
   description:
-    "kubernetes, next.js contributor; master of software engineering @ carnegie mellon",
+    "kubernetes, next.js contributor; distributed system @ carnegie mellon; building things in web and cloud",
+  keywords: [
+    "kubernetes",
+    "web",
+    "cloud",
+    "next.js",
+    "react",
+    "computer",
+    "go",
+    "typescript",
+    "javascript",
+  ],
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const Layout = ({ children }: LayoutProps<"/">) => {
   return (
     <html lang="en" className={cn("antialiased", mono.variable)}>
-      <body className="container mx-auto">{children}</body>
+      <body className="container mx-auto px-4 py-20 h-svh overflow-y-scroll">
+        {children}
+      </body>
     </html>
   );
-}
+};
+
+export default Layout;
