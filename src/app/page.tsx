@@ -1,19 +1,44 @@
+"use client";
+
+import { animate, useMotionValue } from "motion/react";
+import { useEffect, useState } from "react";
+
 import { LinkButton, LinkButtonProps } from "@/components/link-button";
 import DitherShader from "@/components/ui/dither-shader";
 
 const Page = () => {
+  const gridSizeVal = useMotionValue(8);
+
+  const [gridSize, setGridSize] = useState(8);
+
+  useEffect(() => {
+    const unsubscribe = gridSizeVal.on("change", (latestValue) => {
+      setGridSize(Math.round(latestValue));
+    });
+
+    const controls = animate(gridSizeVal, 3, {
+      duration: 0.6,
+      ease: "easeOut",
+    });
+
+    return () => {
+      controls.stop();
+      unsubscribe();
+    };
+  }, []);
+
   return (
     <main className="h-svh px-4 py-10 flex flex-col gap-10 justify-center">
       <DitherShader
-        src="/photo.jpg"
-        gridSize={2}
+        src="/photo.png"
         ditherMode="bayer"
         colorMode="duotone"
         primaryColor="#001813"
         secondaryColor="#E6F7F3"
-        threshold={0.5}
-        objectFit="contain"
-        className="h-80 w-60"
+        gridSize={gridSize}
+        threshold={0.7}
+        objectFit="cover"
+        className="size-60"
       />
 
       <h1 className="text-6xl font-bold flex justify-between">taehoon lee</h1>
