@@ -8,6 +8,7 @@ RUN npm ci
 
 COPY . .
 RUN npm run build
+RUN mkdir -p public
 
 FROM node:22-alpine AS runner
 WORKDIR /app
