@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/ethantlee/dev/portfolio/src/app/page.tsx"],"sourcesContent":["import GlobeDemo from \"@/components/globe-demo\";\n\nconst Page = () => {\n  return <main>\n    <div>\n      \n      </div>\n    </main>;\n};\n\nexport default Page;\n"],"names":[],"mappings":";;;;;;AAEA,MAAM,OAAO;IACX,qBAAO,8OAAC;kBACN,cAAA,8OAAC;;;;;;;;;;AAIL;uCAEe"}}]
-}

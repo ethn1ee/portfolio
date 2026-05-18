@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/ethantlee/dev/portfolio/src/app/blog/layout.tsx"],"sourcesContent":["const Layout = ({ children }: LayoutProps<\"/blog\">) => {\n  return (\n    <>\n      <nav className=\"w-full flex items-center gap-2\">\n        <Link>taehoon lee </Link>\n        &gt; blog</nav>\n      {children}\n    </>\n  );\n};\n\nexport default Layout;\n"],"names":[],"mappings":";;;;;;AAAA,MAAM,SAAS,CAAC,EAAE,QAAQ,EAAwB;IAChD,qBACE;;0BACE,8OAAC;gBAAI,WAAU;;kCACb,8OAAC;kCAAK;;;;;;oBAAmB;;;;;;;YAE1B;;;AAGP;uCAEe"}}]
-}
