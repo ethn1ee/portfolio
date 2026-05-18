@@ -1,16 +1,31 @@
 <script>
+  let social = [
+    { name: "github", href: "https://github.com/thdxg" },
+    { name: "linkedin", href: "https://linkedin.com/in/ethantlee" },
+    {
+      name: "resume",
+      href: "/resume",
+    },
+  ];
   let links = {
     homelab: "https://github.com/thdxg/homelab",
     paper: "https://dl.acm.org/doi/10.1145/3772318.3790875",
   };
 </script>
 
-<main class="mx-auto w-full max-w-xl py-20 space-y-14">
-  <img
-    src="/me.webp"
-    alt="me"
-    class="object-cover size-45 object-bottom block"
-  />
+<main class="mx-auto w-full max-w-xl py-20 px-5 space-y-14">
+  <section id="links" class="flex justify-between gap-4">
+    <img
+      src="/me.webp"
+      alt="me"
+      class="object-cover size-45 object-bottom rounded-lg block"
+    />
+    <div class="flex gap-4">
+      {#each social as link}
+        <a href={link.href} target="_blank" class="h-fit">{link.name}</a>
+      {/each}
+    </div>
+  </section>
 
   <h1>Ethan Lee</h1>
 
@@ -52,7 +67,6 @@
   </section>
 
   <section id="fun">
-    <p>(for fun) conway&apos;s game of life:</p>
-
+    <p>conway&apos;s game of life for fun:</p>
   </section>
 </main>

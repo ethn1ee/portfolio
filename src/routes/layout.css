@@ -17,9 +17,9 @@ h1 {
 }
 
 p {
-  @apply text-neutral-500 leading-loose;
+  @apply text-neutral-400 leading-loose;
 }
 
 ul {
-  @apply text-neutral-500 leading-loose list-disc list-inside;
+  @apply text-neutral-400 leading-loose list-disc list-inside;
 }
