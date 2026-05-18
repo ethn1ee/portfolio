@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///Users/ethantlee/dev/portfolio/src/components/link-button.tsx"],"sourcesContent":["\"use client\";\n\nimport Link from \"next/link\";\n\nexport type LinkButtonProps =\n  | { type: \"link\"; href: string; name: string }\n  | { type: \"copy\"; name: string };\n\nexport const LinkButton = (props: LinkButtonProps) => {\n  return props.type === \"link\" ? (\n    <Link href={props.href} target=\"_blank\" className=\"hover:opacity-80\">\n      &gt; {props.name}\n    </Link>\n  ) : (\n    <button\n      onClick={() => navigator.clipboard.writeText(props.name)}\n      className=\"hover:opacity-80\"\n    >\n      &gt; {props.name}\n    </button>\n  );\n};\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAQO,MAAM,aAAa,CAAC;IACzB,OAAO,MAAM,IAAI,KAAK,uBACpB,8OAAC,uKAAI;QAAC,MAAM,MAAM,IAAI;QAAE,QAAO;QAAS,WAAU;;YAAmB;YAC7D,MAAM,IAAI;;;;;;iEAGlB,8OAAC;QACC,SAAS,IAAM,UAAU,SAAS,CAAC,SAAS,CAAC,MAAM,IAAI;QACvD,WAAU;;YACX;YACO,MAAM,IAAI;;;;;;;AAGtB"}}]
+}

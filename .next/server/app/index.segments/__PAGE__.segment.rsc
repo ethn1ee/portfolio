@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[68967,["/_next/static/chunks/43a7ee3d41e1e82a.js"],"LinkButton"]
+3:I[37935,["/_next/static/chunks/43a7ee3d41e1e82a.js"],"PiCluster"]
+4:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"buildId":"Bz0HLDLJyQ8-9OuZvx2-q","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-full flex flex-col md:flex-row gap-16 md:gap-20 md:items-center justify-center","children":[["$","section",null,{"className":"flex flex-col gap-8 flex-1 max-w-md","children":[["$","h1",null,{"className":"text-5xl md:text-6xl font-bold","children":"taehoon lee"}],["$","p",null,{"className":"text-sm text-muted-foreground","children":"building things in web and cloud"}],["$","div",null,{"className":"flex flex-col gap-2 w-fit text-sm","children":[["$","$L2","0",{"type":"link","href":"https://github.com/thdxg","name":"github"}],["$","$L2","1",{"type":"link","href":"https://linkedin.com/in/ethantlee","name":"linkedin"}],["$","$L2","2",{"type":"link","href":"#","name":"resume"}],["$","$L2","3",{"type":"copy","name":"ethantlee21@gmail.com"}]]}]]}],["$","section",null,{"className":"flex-1 flex md:justify-end","children":["$","$L3",null,{}]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/43a7ee3d41e1e82a.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
+6:null

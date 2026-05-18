@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["file:///Users/ethantlee/dev/portfolio/src/app/blog/page.tsx"],"sourcesContent":["const Page = () => {\n  return <main>blog</main>;\n};\n\nexport default Page;\n"],"names":[],"mappings":";;;;;;AAAA,MAAM,OAAO;IACX,qBAAO,8OAAC;kBAAK;;;;;;AACf;uCAEe"}}]
+}

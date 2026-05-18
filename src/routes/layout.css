@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Iosevka";
+  src: url("/iosevka.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  @apply bg-black w-svw font-[iosevka] text-white;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+p {
+  @apply text-neutral-500 leading-loose;
+}
+
+ul {
+  @apply text-neutral-500 leading-loose list-disc list-inside;
+}
