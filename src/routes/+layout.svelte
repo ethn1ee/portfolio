@@ -1,13 +1,11 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { initGlitch } from "$lib/glitch";
+  import { glitch } from "$lib/glitch";
   import "./layout.css";
 
   let { children } = $props();
 
-  onMount(() => {
-    initGlitch();
-  });
+  onMount(() => glitch());
 </script>
 
 <svelte:head>

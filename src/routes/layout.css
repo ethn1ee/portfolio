@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply mx-auto w-full max-w-xl bg-black px-5 py-10 font-[iosevka] text-white md:py-20;
+  @apply mx-auto w-full max-w-xl bg-black px-5 py-10 font-[iosevka,ui-monospace,monospace] text-white md:py-20;
 }
 
 h1 {
@@ -22,4 +22,20 @@ p {
 
 ul {
   @apply list-inside list-disc leading-loose text-neutral-400;
+}
+
+main a {
+  @apply underline;
+}
+
+picture {
+  @apply contents;
+}
+
+picture > source {
+  @apply hidden;
+}
+
+.img-bg {
+  @apply relative;
 }
