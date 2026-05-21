@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply bg-black w-svw font-[iosevka] text-white;
+  @apply w-svw bg-black font-[iosevka] text-white;
 }
 
 h1 {
@@ -17,9 +17,9 @@ h1 {
 }
 
 p {
-  @apply text-neutral-400 leading-loose;
+  @apply leading-loose text-neutral-400;
 }
 
 ul {
-  @apply text-neutral-400 leading-loose list-disc list-inside;
+  @apply list-inside list-disc leading-loose text-neutral-400;
 }

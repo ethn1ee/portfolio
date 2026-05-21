@@ -414,8 +414,7 @@
   onmouseleave={onLeave}
   role="presentation"
   class="relative"
-  style="height: {totalHeight}px; font: {font}; line-height: {lineHeight}px;"
->
+  style="height: {totalHeight}px; font: {font}; line-height: {lineHeight}px;">
   {#each fragments as frag (frag.itemIndex)}
     {#if frag.style?.href}
       <a
@@ -424,17 +423,15 @@
         target="_blank"
         style="left: {frag.x}px; top: {frag.y}px; transition: {frag.noTransition
           ? 'none'
-          : 'left 150ms ease-out'};"
-      >
+          : 'left 150ms ease-out'};">
         {frag.text}
       </a>
     {:else}
       <span
-        class="absolute whitespace-pre pointer-events-none"
+        class="pointer-events-none absolute whitespace-pre"
         style="left: {frag.x}px; top: {frag.y}px; transition: {frag.noTransition
           ? 'none'
-          : 'left 150ms ease-out'};"
-      >
+          : 'left 150ms ease-out'};">
         {frag.text}
       </span>
     {/if}

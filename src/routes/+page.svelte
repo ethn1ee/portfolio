@@ -15,12 +15,12 @@
   };
 </script>
 
-<main class="mx-auto w-full max-w-xl py-10 md:py-20 px-5 space-y-14">
+<main class="mx-auto w-full max-w-xl space-y-14 px-5 py-10 md:py-20">
   <section id="links" class="flex justify-between gap-4">
     <img
       src="/me.webp"
       alt="me"
-      class="object-cover size-45 object-bottom rounded-lg block grayscale"
+      class="block size-45 rounded-lg object-cover object-bottom grayscale"
     />
     <div class="flex gap-4">
       {#each social as link}
@@ -43,13 +43,13 @@
     <Displaceable>kubernetes, next.js contributor</Displaceable>
   </section>
 
-  <section id="homelab" class="flex gap-4 flex-col md:flex-row">
+  <section id="homelab" class="flex flex-col gap-4 md:flex-row">
     <img src="/homelab.png" alt="homelab" class="size-50" />
-    <div class="space-y-2 text-neutral-400 flex-1">
+    <div class="flex-1 space-y-2 text-neutral-400">
       <Displaceable>i build things in web and cloud</Displaceable>
-      <Displaceable
-        >this is my raspberry pi cluster running kubernetes</Displaceable
-      >
+      <Displaceable>
+        this is my raspberry pi cluster running kubernetes
+      </Displaceable>
       <Displaceable>
         it runs my password manager, git server, observability stacks, and this
         website
@@ -61,7 +61,7 @@
     </div>
   </section>
 
-  <section id="experience" class="text-neutral-400 space-y-2">
+  <section id="experience" class="space-y-2 text-neutral-400">
     <Displaceable>things i’ve done so far:</Displaceable>
     <ul class="space-y-2">
       <li class="grid grid-cols-[1rem_1fr] items-start">
@@ -79,6 +79,64 @@
       <li class="grid grid-cols-[1rem_1fr] items-start">
         <span>•</span>
         <Displaceable>swe intern at estreamly (2024 summer)</Displaceable>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects" class="space-y-2 text-neutral-400">
+    <Displaceable>things i’ve built for fun:</Displaceable>
+    <ul class="space-y-2">
+      <li class="grid grid-cols-[1rem_1fr] items-start">
+        <span>•</span>
+        <Displaceable>
+          <a
+            href="https://github.com/thdxg/macterm"
+            target="_blank"
+            class="underline"
+          >
+            macterm
+          </a>
+          - a native macos terminal with vertical tabs built with libghostty and swiftui
+        </Displaceable>
+      </li>
+      <li class="grid grid-cols-[1rem_1fr] items-start">
+        <span>•</span>
+        <Displaceable>
+          <a
+            href="https://github.com/thdxg/llog"
+            target="_blank"
+            class="underline"
+          >
+            llog
+          </a>
+          - a fully local journaling CLI written in go
+        </Displaceable>
+      </li>
+      <li class="grid grid-cols-[1rem_1fr] items-start">
+        <span>•</span>
+        <Displaceable>
+          <a
+            href="https://github.com/thdxg/ttype"
+            target="_blank"
+            class="underline"
+          >
+            ttype
+          </a>
+          - a simple bring-your-own-text typing test CLI written in rust
+        </Displaceable>
+      </li>
+      <li class="grid grid-cols-[1rem_1fr] items-start">
+        <span>•</span>
+        <Displaceable>
+          <a
+            href="https://github.com/thdxg/ghfetch"
+            target="_blank"
+            class="underline"
+          >
+            ghfetch
+          </a>
+          - neofetch for github profiles written in go
+        </Displaceable>
       </li>
     </ul>
   </section>
