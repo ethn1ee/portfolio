@@ -1,6 +1,4 @@
 <script>
-  import Displaceable from "$lib/Displaceable.svelte";
-
   let social = [
     { name: "github", href: "https://github.com/thdxg" },
     { name: "linkedin", href: "https://linkedin.com/in/ethantlee" },
@@ -15,7 +13,7 @@
   };
 </script>
 
-<main class="mx-auto w-full max-w-xl space-y-14 px-5 py-10 md:py-20">
+<main class="glitch mx-auto w-full max-w-xl space-y-14 px-5 py-10 md:py-20">
   <section id="links" class="flex justify-between gap-4">
     <img
       src="/me.webp"
@@ -29,115 +27,82 @@
     </div>
   </section>
 
-  <h1>
-    <Displaceable font="36px Iosevka, ui-monospace, monospace" lineHeight={40}>
-      Ethan Lee
-    </Displaceable>
-  </h1>
+  <h1>Ethan Lee</h1>
 
   <section id="bio" class="space-y-2 text-neutral-400">
-    <Displaceable>
+    <p>
       founding engineer of
-      <a href="https://huddlesurety.co" target="_blank" class="underline">huddle surety</a>
-    </Displaceable>
-    <Displaceable>studying distributed systems at carnegie mellon</Displaceable>
-    <Displaceable>kubernetes, next.js contributor</Displaceable>
+      <a href="https://huddlesurety.co" target="_blank" class="underline"
+        >huddle surety</a
+      >
+    </p>
+    <p>studying distributed systems at carnegie mellon</p>
+    <p>kubernetes, next.js contributor</p>
   </section>
 
   <section id="homelab" class="flex flex-col gap-4 md:flex-row">
     <img src="/homelab.png" alt="homelab" class="size-50" />
     <div class="flex-1 space-y-2 text-neutral-400">
-      <Displaceable>i build things in web and cloud</Displaceable>
-      <Displaceable>
-        this is my raspberry pi cluster running kubernetes
-      </Displaceable>
-      <Displaceable>
+      <p>i build things in web and cloud</p>
+      <p>this is my raspberry pi cluster running kubernetes</p>
+      <p>
         it runs my password manager, git server, observability stacks, and this
         website
-      </Displaceable>
-      <Displaceable>
+      </p>
+      <p>
         check out the whole setup
         <a href={links.homelab} target="_blank" class="underline">here</a>
-      </Displaceable>
+      </p>
     </div>
   </section>
 
   <section id="experience" class="space-y-2 text-neutral-400">
-    <Displaceable>things i’ve done so far:</Displaceable>
-    <ul class="space-y-2">
-      <li class="grid grid-cols-[1rem_1fr] items-start">
-        <span>•</span>
-        <Displaceable>
-          published an
-          <a href={links.paper} target="_blank" class="underline">hci paper</a>
-          to acm (2026)
-        </Displaceable>
+    <p>things i’ve done so far:</p>
+    <ul class="list-inside list-disc space-y-2">
+      <li>
+        published an
+        <a href={links.paper} target="_blank" class="underline">hci paper</a>
+        to acm (2026)
       </li>
-      <li class="grid grid-cols-[1rem_1fr] items-start">
-        <span>•</span>
-        <Displaceable>swe intern at ukg (2025 summer)</Displaceable>
-      </li>
-      <li class="grid grid-cols-[1rem_1fr] items-start">
-        <span>•</span>
-        <Displaceable>swe intern at estreamly (2024 summer)</Displaceable>
-      </li>
+      <li>swe intern at ukg (2025 summer)</li>
+      <li>swe intern at estreamly (2024 summer)</li>
     </ul>
   </section>
 
   <section id="projects" class="space-y-2 text-neutral-400">
-    <Displaceable>things i’ve built for fun:</Displaceable>
-    <ul class="space-y-2">
-      <li class="grid grid-cols-[1rem_1fr] items-start">
-        <span>•</span>
-        <Displaceable>
-          <a
-            href="https://github.com/thdxg/macterm"
-            target="_blank"
-            class="underline"
-          >
-            macterm
-          </a>
-          - a native macos terminal with vertical tabs built with libghostty and swiftui
-        </Displaceable>
+    <p>things i’ve built for fun:</p>
+    <ul class="list-inside list-disc space-y-2">
+      <li>
+        <a
+          href="https://github.com/thdxg/macterm"
+          target="_blank"
+          class="underline">macterm</a
+        >
+        - a native macos terminal with vertical tabs built with libghostty and swiftui
       </li>
-      <li class="grid grid-cols-[1rem_1fr] items-start">
-        <span>•</span>
-        <Displaceable>
-          <a
-            href="https://github.com/thdxg/llog"
-            target="_blank"
-            class="underline"
-          >
-            llog
-          </a>
-          - a fully local journaling CLI written in go
-        </Displaceable>
+      <li>
+        <a
+          href="https://github.com/thdxg/llog"
+          target="_blank"
+          class="underline">llog</a
+        >
+        - a fully local journaling CLI written in go
       </li>
-      <li class="grid grid-cols-[1rem_1fr] items-start">
-        <span>•</span>
-        <Displaceable>
-          <a
-            href="https://github.com/thdxg/ttype"
-            target="_blank"
-            class="underline"
-          >
-            ttype
-          </a>
-          - a simple bring-your-own-text typing test CLI written in rust
-        </Displaceable>
+      <li>
+        <a
+          href="https://github.com/thdxg/ttype"
+          target="_blank"
+          class="underline">ttype</a
+        >
+        - a simple bring-your-own-text typing test CLI written in rust
       </li>
-      <li class="grid grid-cols-[1rem_1fr] items-start">
-        <span>•</span>
-        <Displaceable>
-          <a
-            href="https://github.com/thdxg/ghfetch"
-            target="_blank"
-            class="underline"
-          >
-            ghfetch
-          </a>
-          - neofetch for github profiles written in go
-        </Displaceable>
+      <li>
+        <a
+          href="https://github.com/thdxg/ghfetch"
+          target="_blank"
+          class="underline">ghfetch</a
+        >
+        - neofetch for github profiles written in go
       </li>
     </ul>
   </section>

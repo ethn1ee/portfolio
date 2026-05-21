@@ -1,18 +1,6 @@
 {
   "name": "website",
-  "private": true,
   "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "prepare": "svelte-kit sync || echo ''",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check . && eslint .",
-    "format": "prettier --write ."
-  },
   "devDependencies": {
     "@eslint/compat": "^2.0.4",
     "@eslint/js": "^10.0.1",
@@ -35,7 +23,16 @@
     "typescript-eslint": "^8.58.1",
     "vite": "^8.0.7"
   },
-  "dependencies": {
-    "@chenglou/pretext": "^0.0.7"
-  }
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write ."
+  },
+  "type": "module"
 }
