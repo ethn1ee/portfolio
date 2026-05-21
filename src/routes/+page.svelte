@@ -51,7 +51,7 @@
         >this is my raspberry pi cluster running kubernetes</Displaceable
       >
       <Displaceable>
-        it runs my password manager, gitlab, observability stacks, and this
+        it runs my password manager, git server, observability stacks, and this
         website
       </Displaceable>
       <Displaceable>
