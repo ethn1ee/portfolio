@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply w-svw bg-black font-[iosevka] text-white;
+  @apply mx-auto w-full max-w-xl bg-black px-5 py-10 font-[iosevka] text-white md:py-20;
 }
 
 h1 {

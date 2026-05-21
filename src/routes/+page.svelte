@@ -9,19 +9,19 @@
   ];
 </script>
 
-<main class="glitch mx-auto w-full max-w-xl space-y-14 px-5 py-10 md:py-20">
-  <section id="links" class="flex justify-between gap-4">
-    <img
-      src="/me.webp"
-      alt="me"
-      class="block size-45 rounded-lg object-cover object-bottom grayscale" />
-    <div class="flex gap-4">
-      {#each social as link}
-        <a href={link.href} target="_blank" class="h-fit">{link.name}</a>
-      {/each}
-    </div>
-  </section>
+<header class="glitch mb-12 flex justify-between gap-4">
+  <img
+    src="/me.webp"
+    alt="me"
+    class="block size-45 rounded-lg object-cover object-bottom grayscale" />
+  <nav class="flex gap-4">
+    {#each social as link}
+      <a href={link.href} target="_blank" class="h-fit">{link.name}</a>
+    {/each}
+  </nav>
+</header>
 
+<main class="glitch space-y-12">
   <h1>Ethan Lee</h1>
 
   <section id="bio" class="space-y-2 text-neutral-400">
