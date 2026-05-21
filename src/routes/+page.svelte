@@ -1,4 +1,6 @@
 <script>
+  import meImg from "$lib/assets/me.webp";
+  import homelabImg from "$lib/assets/homelab.png";
   let social = [
     { name: "github", href: "https://github.com/thdxg" },
     { name: "linkedin", href: "https://linkedin.com/in/ethantlee" },
@@ -10,8 +12,8 @@
 </script>
 
 <header class="glitch mb-12 flex justify-between gap-4">
-  <img
-    src="/me.webp"
+  <enhanced:img
+    src={meImg}
     alt="me"
     class="block size-45 rounded-lg object-cover object-bottom grayscale" />
   <nav class="flex gap-4">
@@ -38,7 +40,7 @@
   </section>
 
   <section id="homelab" class="flex flex-col gap-4 md:flex-row">
-    <img src="/homelab.png" alt="homelab" class="size-50" />
+    <enhanced:img src={homelabImg} alt="homelab" class="size-50" />
     <p>
       i build things in web and cloud
       <br />
