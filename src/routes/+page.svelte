@@ -1,4 +1,6 @@
 <script>
+  import Displaceable from "$lib/Displaceable.svelte";
+
   let social = [
     { name: "github", href: "https://github.com/thdxg" },
     { name: "linkedin", href: "https://linkedin.com/in/ethantlee" },
@@ -13,12 +15,12 @@
   };
 </script>
 
-<main class="mx-auto w-full max-w-xl py-20 px-5 space-y-14">
+<main class="mx-auto w-full max-w-xl py-10 md:py-20 px-5 space-y-14">
   <section id="links" class="flex justify-between gap-4">
     <img
       src="/me.webp"
       alt="me"
-      class="object-cover size-45 object-bottom rounded-lg block"
+      class="object-cover size-45 object-bottom rounded-lg block grayscale"
     />
     <div class="flex gap-4">
       {#each social as link}
@@ -27,46 +29,57 @@
     </div>
   </section>
 
-  <h1>Ethan Lee</h1>
+  <h1>
+    <Displaceable font="36px Iosevka, ui-monospace, monospace" lineHeight={40}>
+      Ethan Lee
+    </Displaceable>
+  </h1>
 
-  <section id="bio">
-    <p>
-      founding engineer @ huddle surety
-      <br />
+  <section id="bio" class="space-y-2 text-neutral-400">
+    <Displaceable>founding engineer @ huddle surety</Displaceable>
+    <Displaceable>
       master’s in distributed systems @ carnegie mellon
-      <br />
-      kubernetes, next.js contributor
-    </p>
+    </Displaceable>
+    <Displaceable>kubernetes, next.js contributor</Displaceable>
   </section>
 
-  <section id="homelab" class="flex gap-4">
+  <section id="homelab" class="flex gap-4 flex-col md:flex-row">
     <img src="/homelab.png" alt="homelab" class="size-50" />
-    <p>
-      i build things in web and cloud
-      <br />
-      this is my raspberry pi cluster running kubernetes
-      <br />
-      it runs my password manager, gitlab, observability stacks, and this website
-      <br />
-      check out the whole setup
-      <a href={links.homelab} target="_blank" class="underline">here</a>
-    </p>
+    <div class="space-y-2 text-neutral-400 flex-1">
+      <Displaceable>i build things in web and cloud</Displaceable>
+      <Displaceable
+        >this is my raspberry pi cluster running kubernetes</Displaceable
+      >
+      <Displaceable>
+        it runs my password manager, gitlab, observability stacks, and this
+        website
+      </Displaceable>
+      <Displaceable>
+        check out the whole setup
+        <a href={links.homelab} target="_blank" class="underline">here</a>
+      </Displaceable>
+    </div>
   </section>
 
-  <section id="experience">
-    <p>things i’ve done so far:</p>
-    <ul>
-      <li>
-        published an
-        <a href={links.paper} target="_blank" class="underline"> hci paper </a>
-        to acm (2026)
+  <section id="experience" class="text-neutral-400 space-y-2">
+    <Displaceable>things i’ve done so far:</Displaceable>
+    <ul class="space-y-2">
+      <li class="grid grid-cols-[1rem_1fr] items-start">
+        <span>•</span>
+        <Displaceable>
+          published an
+          <a href={links.paper} target="_blank" class="underline">hci paper</a>
+          to acm (2026)
+        </Displaceable>
       </li>
-      <li>swe intern at ukg (2025 summer)</li>
-      <li>swe intern at estreamly (2024 summer)</li>
+      <li class="grid grid-cols-[1rem_1fr] items-start">
+        <span>•</span>
+        <Displaceable>swe intern at ukg (2025 summer)</Displaceable>
+      </li>
+      <li class="grid grid-cols-[1rem_1fr] items-start">
+        <span>•</span>
+        <Displaceable>swe intern at estreamly (2024 summer)</Displaceable>
+      </li>
     </ul>
-  </section>
-
-  <section id="fun">
-    <p>conway&apos;s game of life for fun:</p>
   </section>
 </main>
