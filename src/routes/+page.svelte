@@ -36,10 +36,11 @@
   </h1>
 
   <section id="bio" class="space-y-2 text-neutral-400">
-    <Displaceable>founding engineer @ huddle surety</Displaceable>
     <Displaceable>
-      master’s in distributed systems @ carnegie mellon
+      founding engineer of
+      <a href="https://huddlesurety.co" target="_blank" class="underline">huddle surety</a>
     </Displaceable>
+    <Displaceable>studying distributed systems at carnegie mellon</Displaceable>
     <Displaceable>kubernetes, next.js contributor</Displaceable>
   </section>
 
