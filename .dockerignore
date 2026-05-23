@@ -1,0 +1,9 @@
+.git
+.svelte-kit
+.wrangler
+.claude
+node_modules
+build
+dist
+.DS_Store
+*.log
