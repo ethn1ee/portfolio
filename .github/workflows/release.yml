@@ -3,8 +3,20 @@ name: Build and release Docker image
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
+      - ".prettierrc"
+      - ".prettierignore"
+      - "eslint.config.*"
   pull_request:
     branches: [main]
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
+      - ".prettierrc"
+      - ".prettierignore"
+      - "eslint.config.*"
   workflow_dispatch:
 
 env:
