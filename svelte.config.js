@@ -1,4 +1,7 @@
-import adapter from "svelte-adapter-bun";
+import bun from "svelte-adapter-bun";
+import cloudflare from "@sveltejs/adapter-cloudflare";
+
+const adapter = process.env.CF_PAGES ? cloudflare() : bun();
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,7 +11,7 @@ const config = {
       filename.split(/[/\\]/).includes("node_modules") ? undefined : true,
   },
   kit: {
-    adapter: adapter(),
+    adapter,
   },
 };
 
