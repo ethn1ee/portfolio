@@ -2,7 +2,7 @@ name: Build and release Docker image
 
 on:
   push:
-    branches: [main]
+    branches: [v4]
     paths-ignore:
       - "**/*.md"
       - "docs/**"
@@ -10,7 +10,7 @@ on:
       - ".prettierignore"
       - "eslint.config.*"
   pull_request:
-    branches: [main]
+    branches: [v4]
     paths-ignore:
       - "**/*.md"
       - "docs/**"
