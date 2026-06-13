@@ -28,35 +28,38 @@
 <main class="glitch space-y-12">
   <h1 class="glitch-initial">Ethan Lee</h1>
 
-  <section id="bio" class="space-y-2 text-neutral-400">
-    <p>
-      founding engineer of
-      <a href="https://huddlesurety.co" target="_blank"> huddle surety </a>
-      <br />
-      studying distributed systems at carnegie mellon
-      <br />
-      kubernetes, next.js contributor
-    </p>
-  </section>
-
   <section id="homelab" class="flex flex-col gap-4 md:flex-row">
-    <div class="img-bg size-50 shrink-0">
-      <enhanced:img src={homelabImg} alt="homelab" class="size-full" />
-    </div>
     <p>
       i build things in web and cloud
       <br />
-      this is my raspberry pi cluster running kubernetes
+      like this two-node raspberry pi kubernetes cluster
       <br />
-      it runs my password manager, git server, observability stacks, and this website
+      it runs my projects, including this website
+      <a href="https://github.com/thdxg/homelab" target="_blank">
+        (full setup)
+      </a>
       <br />
-      check out the whole setup
-      <a href="https://github.com/thdxg/homelab" target="_blank">here</a>
+      i also like working in the terminal
     </p>
+    <div class="img-bg size-50 shrink-0">
+      <enhanced:img src={homelabImg} alt="homelab" class="size-full" />
+    </div>
+  </section>
+
+  <section id="bio" class="space-y-2 text-neutral-400">
+    <p>things i do:</p>
+    <ul>
+      <li>
+        founding engineer of
+        <a href="https://huddlesurety.co" target="_blank"> huddle surety </a>
+      </li>
+      <li>master's in computer science at cmu</li>
+      <li>open-source contribution (kubernetes, next.js)</li>
+    </ul>
   </section>
 
   <section id="experience">
-    <p>things i’ve done so far:</p>
+    <p>things i've done:</p>
     <ul>
       <li>
         published an
@@ -67,14 +70,15 @@
         </a>
         to acm (2026)
       </li>
-      <li>swe intern at ukg (2025 summer)</li>
-      <li>swe intern at estreamly (2024 summer)</li>
+      <li>graduated summa cum laude from emory univ (2026)</li>
+      <li>swe intern at ukg (2025)</li>
+      <li>swe intern at estreamly (2024)</li>
     </ul>
   </section>
 
   <section id="projects">
-    <p>things i’ve built for fun:</p>
-    <ul>
+    <p>things i've built:</p>
+    <ul class="list-inside">
       <li>
         <a href="https://github.com/thdxg/macterm" target="_blank">macterm</a>
         - a native macos terminal with vertical tabs built with libghostty and swiftui

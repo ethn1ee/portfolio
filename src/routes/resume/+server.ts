@@ -1,6 +1,6 @@
 export const GET = async () => {
   const upstream = await fetch(
-    "https://raw.githubusercontent.com/thdxg/resume/main/assets/resume.pdf",
+    "https://raw.githubusercontent.com/thdxg/resume/main/assets/Taehoon_Lee_resume.pdf",
   );
 
   if (!upstream.ok) {
@@ -11,7 +11,7 @@ export const GET = async () => {
     status: 200,
     headers: {
       "Content-Type": "application/pdf",
-      "Content-Disposition": 'inline; filename="resume.pdf"',
+      "Content-Disposition": 'inline; filename="Taehoon_Lee_resume.pdf"',
     },
   });
 };
