@@ -1,15 +1,7 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "Iosevka";
-  src: url("/iosevka.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
-  @apply mx-auto w-full max-w-xl bg-black px-5 py-10 font-[iosevka,ui-monospace,monospace] text-white md:py-20;
+  @apply mx-auto w-full max-w-3xl bg-black px-5 pt-24 pb-10 font-["Geist_Mono",ui-monospace,monospace] font-light text-white md:pt-40 md:pb-20;
 }
 
 h1 {
@@ -17,15 +9,39 @@ h1 {
 }
 
 p {
-  @apply leading-loose text-neutral-400;
+  @apply leading-relaxed text-neutral-400;
 }
 
 ul {
-  @apply list-inside list-disc leading-loose text-neutral-400;
+  @apply list-inside list-disc leading-relaxed text-neutral-400;
 }
 
 main a {
   @apply underline;
+}
+
+/* git-log style list — one row per entry: "* <label>" */
+.tree {
+  @apply list-none space-y-2 pl-0 leading-relaxed text-neutral-400;
+}
+
+.tree .marker {
+  @apply mr-2 text-neutral-600 no-underline select-none;
+}
+
+/* warm accent used for the entry title / primary link */
+.accent {
+  @apply text-[#c8956a];
+}
+
+/* dimmed commit hash */
+.hash {
+  @apply text-neutral-500 no-underline;
+}
+
+/* dimmed [tag] annotations */
+.tag {
+  @apply text-neutral-600 no-underline;
 }
 
 picture {

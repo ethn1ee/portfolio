@@ -1,5 +1,4 @@
 <script>
-  import meImg from "$lib/assets/me.webp?enhanced";
   import homelabImg from "$lib/assets/homelab.png?enhanced";
   let social = [
     { name: "github", href: "https://github.com/thdxg" },
@@ -11,22 +10,19 @@
   ];
 </script>
 
-<header class="glitch mb-12 flex justify-between gap-4">
-  <div class="img-bg size-45 rounded-lg">
-    <enhanced:img
-      src={meImg}
-      alt="me"
-      class="block size-full rounded-lg object-cover object-bottom grayscale" />
-  </div>
-  <nav class="flex gap-4">
-    {#each social as link}
-      <a href={link.href} target="_blank" class="h-fit">{link.name}</a>
-    {/each}
-  </nav>
+<header class="glitch mb-12">
+  <img src="/favicon.svg" alt="logo" class="size-10 shrink-0" />
 </header>
 
 <main class="glitch space-y-12">
-  <h1 class="glitch-initial">Ethan Lee</h1>
+  <div class="space-y-4">
+    <h1 class="glitch-initial">Ethan Lee</h1>
+    <nav class="flex gap-4">
+      {#each social as link}
+        <a href={link.href} target="_blank">{link.name}</a>
+      {/each}
+    </nav>
+  </div>
 
   <section id="homelab" class="flex flex-col gap-4 md:flex-row">
     <p>
@@ -46,23 +42,31 @@
     </div>
   </section>
 
-  <section id="bio" class="space-y-2 text-neutral-400">
-    <p>things i do:</p>
-    <ul>
+  <section id="bio">
+    <ul class="tree">
+      <li><span class="marker">*</span>things i do</li>
       <li>
-        founding engineer of
-        <a href="https://huddlesurety.co" target="_blank"> huddle surety </a>
+        <span class="marker">⎿</span>founding engineer
+        <a href="https://huddlesurety.co" target="_blank" class="accent">
+          huddle surety
+        </a>
       </li>
-      <li>master's in computer science at cmu</li>
-      <li>open-source contribution (kubernetes, next.js)</li>
+      <li>
+        <span class="marker">⎿</span>master's
+        <span class="accent">computer science @ cmu</span>
+      </li>
+      <li>
+        <span class="marker">⎿</span>open-source
+        <span class="accent">kubernetes, next.js</span>
+      </li>
     </ul>
   </section>
 
   <section id="experience">
-    <p>things i've done:</p>
-    <ul>
+    <ul class="tree">
+      <li><span class="marker">*</span>things i've done</li>
       <li>
-        published an
+        <span class="marker">⎿</span>published an
         <a
           href="https://dl.acm.org/doi/10.1145/3772318.3790875"
           target="_blank">
@@ -70,30 +74,52 @@
         </a>
         to acm (2026)
       </li>
-      <li>graduated summa cum laude from emory univ (2026)</li>
-      <li>swe intern at ukg (2025)</li>
-      <li>swe intern at estreamly (2024)</li>
+      <li>
+        <span class="marker">⎿</span>graduated summa cum laude from emory univ
+        (2026)
+      </li>
+      <li><span class="marker">⎿</span>swe intern at ukg (2025)</li>
+      <li><span class="marker">⎿</span>swe intern at estreamly (2024)</li>
     </ul>
   </section>
 
   <section id="projects">
-    <p>things i've built:</p>
-    <ul class="list-inside">
+    <ul class="tree">
+      <li><span class="marker">*</span>things i've built</li>
       <li>
-        <a href="https://github.com/thdxg/macterm" target="_blank">macterm</a>
-        - a native macos terminal with vertical tabs built with libghostty and swiftui
+        <span class="marker">⎿</span>
+        <a
+          href="https://github.com/thdxg/macterm"
+          target="_blank"
+          class="accent">
+          macterm
+        </a>
+        — a macos terminal with session persistence, smart multiplexing, and
+        native ui, built on libghostty
       </li>
       <li>
-        <a href="https://github.com/thdxg/llog" target="_blank">llog</a>
-        - a fully local journaling CLI written in go
+        <span class="marker">⎿</span>
+        <a href="https://github.com/thdxg/llog" target="_blank" class="accent">
+          llog
+        </a>
+        — a fully local journaling cli written in go
       </li>
       <li>
-        <a href="https://github.com/thdxg/ttype" target="_blank">ttype</a>
-        - a simple bring-your-own-text typing test CLI written in rust
+        <span class="marker">⎿</span>
+        <a href="https://github.com/thdxg/ttype" target="_blank" class="accent">
+          ttype
+        </a>
+        — a simple bring-your-own-text typing test cli written in rust
       </li>
       <li>
-        <a href="https://github.com/thdxg/ghfetch" target="_blank">ghfetch</a>
-        - neofetch for github profiles written in go
+        <span class="marker">⎿</span>
+        <a
+          href="https://github.com/thdxg/ghfetch"
+          target="_blank"
+          class="accent">
+          ghfetch
+        </a>
+        — neofetch for github profiles written in go
       </li>
     </ul>
   </section>
