@@ -1,7 +1,10 @@
 .git
 .svelte-kit
-.wrangler
 .claude
+.github
+Dockerfile
+.dockerignore
+README.md
 node_modules
 build
 dist
