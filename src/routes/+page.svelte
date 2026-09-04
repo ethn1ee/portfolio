@@ -38,7 +38,7 @@
       i also like working in the terminal
     </p>
     <div class="img-bg size-50 shrink-0">
-      <enhanced:img src={homelabImg} alt="homelab" class="size-full" />
+      <enhanced:img src={homelabImg} alt="homelab" class="size-full object-cover" />
     </div>
   </section>
 
@@ -52,12 +52,12 @@
         </a>
       </li>
       <li>
-        <span class="marker">⎿</span>master's
-        <span class="accent">computer science @ cmu</span>
+        <span class="marker">⎿</span>master of software engineering
+        <span class="accent">@ cmu</span>
       </li>
       <li>
         <span class="marker">⎿</span>open-source
-        <span class="accent">kubernetes, next.js</span>
+        <span class="accent">kubernetes, next.js, echo</span>
       </li>
     </ul>
   </section>
@@ -75,7 +75,7 @@
         to acm (2026)
       </li>
       <li>
-        <span class="marker">⎿</span>graduated summa cum laude from emory univ
+        <span class="marker">⎿</span>graduated magna cum laude from emory univ
         (2026)
       </li>
       <li><span class="marker">⎿</span>swe intern at ukg (2025)</li>
@@ -96,6 +96,17 @@
         </a>
         — a macos terminal with session persistence, smart multiplexing, and
         native ui, built on libghostty
+      </li>
+      <li>
+        <span class="marker">⎿</span>
+        <a
+          href="https://github.com/thdxg/helix"
+          target="_blank"
+          class="accent">
+          helix
+        </a>
+        — a custom fork of helix editor with plugins, file reloading, and
+        image/pdf preview
       </li>
       <li>
         <span class="marker">⎿</span>
