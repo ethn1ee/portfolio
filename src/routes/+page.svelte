@@ -26,19 +26,22 @@
 
   <section id="homelab" class="flex flex-col gap-4 md:flex-row">
     <p>
-      i build things in web and cloud
+      i build things in web and cloud.
       <br />
-      like this two-node raspberry pi kubernetes cluster
+      like this two-node raspberry pi kubernetes cluster.
       <br />
-      it runs my projects, including this website
+      it runs my projects, including this website.
       <a href="https://github.com/thdxg/homelab" target="_blank">
         (full setup)
       </a>
       <br />
-      i also like working in the terminal
+      i also like working in the terminal.
     </p>
     <div class="img-bg size-50 shrink-0">
-      <enhanced:img src={homelabImg} alt="homelab" class="size-full object-cover" />
+      <enhanced:img
+        src={homelabImg}
+        alt="homelab"
+        class="size-full object-cover" />
     </div>
   </section>
 
@@ -46,17 +49,20 @@
     <ul class="tree">
       <li><span class="marker">*</span>things i do</li>
       <li>
-        <span class="marker">⎿</span>founding engineer
-        <a href="https://huddlesurety.co" target="_blank" class="accent">
-          huddle surety
+        <span class="marker">⎿</span>
+        founding engineer
+        <a href="https://huddlesurety.com" target="_blank" class="accent">
+          @ huddle surety
         </a>
       </li>
       <li>
-        <span class="marker">⎿</span>master of software engineering
+        <span class="marker">⎿</span>
+        master of software engineering
         <span class="accent">@ cmu</span>
       </li>
       <li>
-        <span class="marker">⎿</span>open-source
+        <span class="marker">⎿</span>
+        contributing to
         <span class="accent">kubernetes, next.js, echo</span>
       </li>
     </ul>
@@ -66,7 +72,8 @@
     <ul class="tree">
       <li><span class="marker">*</span>things i've done</li>
       <li>
-        <span class="marker">⎿</span>published an
+        <span class="marker">⎿</span>
+        published an
         <a
           href="https://dl.acm.org/doi/10.1145/3772318.3790875"
           target="_blank">
@@ -75,11 +82,17 @@
         to acm (2026)
       </li>
       <li>
-        <span class="marker">⎿</span>graduated magna cum laude from emory univ
-        (2026)
+        <span class="marker">⎿</span>
+        graduated magna cum laude from emory univ (2026)
       </li>
-      <li><span class="marker">⎿</span>swe intern at ukg (2025)</li>
-      <li><span class="marker">⎿</span>swe intern at estreamly (2024)</li>
+      <li>
+        <span class="marker">⎿</span>
+        swe intern at ukg (2025)
+      </li>
+      <li>
+        <span class="marker">⎿</span>
+        swe intern at estreamly (2024)
+      </li>
     </ul>
   </section>
 
@@ -94,19 +107,16 @@
           class="accent">
           macterm
         </a>
-        — a macos terminal with session persistence, smart multiplexing, and
-        native ui, built on libghostty
+        — a lightweight macos terminal with vertical tabs, session persistence, and
+        native ui
       </li>
       <li>
         <span class="marker">⎿</span>
-        <a
-          href="https://github.com/thdxg/helix"
-          target="_blank"
-          class="accent">
+        <a href="https://github.com/thdxg/helix" target="_blank" class="accent">
           helix
         </a>
-        — a custom fork of helix editor with plugins, file reloading, and
-        image/pdf preview
+        — a custom fork of helix editor with plugins, file reloading, and image/pdf
+        preview
       </li>
       <li>
         <span class="marker">⎿</span>
